@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ola Stones</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-container">
+        <div class="logo">
+            <span>Ola Stones</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#home" aria-label="Navigate to Home section">Home</a>
+            <a href="#about" aria-label="Navigate to About Us section">About Us</a>
+            <a href="#products" aria-label="Navigate to Products section">Products</a>
+            <a href="#contact" aria-label="Navigate to Contact section">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Your Trusted Natural Stone Supplier</h1>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="product-section">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="img/sandstone.jpg" alt="High-quality sandstone">
+                <h3>Sandstone</h3>
+                <p>Premium quality sandstone for all needs.</p>
+            </div>
+            <div class="product-item">
+                <img src="img/limestone.jpg" alt="Elegant limestone">
+                <h3>Limestone</h3>
+                <p>Durable and elegant limestone options.</p>
+            </div>
+            <div class="product-item">
+                <img src="img/kharda-red-granite .jpg" alt="Beautiful marble">
+                <h3>Marble</h3>
+                <p>Beautiful marble for flooring and decor.</p>
+            </div>
+            <div class="product-item">
+                <img src="img/kharda-red-granite .jpg" alt="High-quality granite">
+                <h3>Granite</h3>
+                <p>High-quality granite for construction.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>
+            At Ola Stones, we specialize in manufacturing and exporting high-quality natural stones. 
+            From sandstone to marble, we cater to all your construction and design needs.
+        </p>
+    </section>
+
+    <!-- Footer Section -->
+<footer id="contact" class="footer-container">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@royalindianstones.com">info@olastones.com</a></p>
+    <p>Phone: <a href="tel:+9166513832">+91 9166513832</a></p>
+    <p>Address: Jaipur, Rajasthan</p>
+
+    <div class="footer-bottom">
+        <div class="copyright">
+            <i class="fa-regular fa-copyright"></i> 2024 <span class="highlight">Ola Stones</span>. All Rights Reserved.
+        </div>
+        <!-- made-with-love -->
+        <div class="made-with-love">
+            Made with <i class="fa fa-heart" style="font-size:25px;color:red;"></i> in India by Dinesh Ola
+        </div>
+        <!-- social-icon -->
+        <div class="social-icons">
+            <a href="#" target="_blank" class="social-icon" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon" aria-label="Pinterest">
+                <i class="fab fa-pinterest"></i>
+            </a>
+            <a href="#" target="_blank" class="social-icon" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+        <button onclick="topFunction()" class="back-to-top" aria-label="Back to top"> ↑</button>
+    </div>
+</footer>
+
+
+
+    <!-- JavaScript -->
+    <script>
+        // Get the button:
+    let mybutton = document.getElementByClass("back-to-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+      
+    </script>
+</body>
+</html>
